@@ -10,7 +10,7 @@ const wa = (text) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}
 const clean = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-const hello = wa("Bonjour Barnabe Store, j’aimerais avoir des renseignements.");
+const hello = wa("Bonjour Tr13ze Store, j’aimerais avoir des renseignements.");
 ["wa-top", "wa-hero", "wa-contact"].forEach((id) => (document.getElementById(id).href = hello));
 
 function render() {
