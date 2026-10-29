@@ -27,7 +27,7 @@ function render() {
     return;
   }
   grid.innerHTML = list.map((p) => {
-    const msg = `Bonjour Barnabe Store, je suis intéressé par le ${p.name}, affiché à ${fcfa(p.price)}. Est-il disponible ?`;
+    const msg = `Bonjour Tr13ze Store, je suis intéressé par le ${p.name}, affiché à ${fcfa(p.price)}. Est-il disponible ?`;
     const badge = p.badge ? `<span class="badge b-${clean(p.badge)}">${esc(p.badge)}</span>` : "";
     return `<article class="card">
       <div class="thumb">
